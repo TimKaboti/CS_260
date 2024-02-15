@@ -1,31 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="main-background">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
 <body>
     <header>
-        <p style="font-size:35px">Tic-Tac-Toe</p>
+        <h1 style="font-size: 35px" class="game-title">Tic-Tac-Toe</h1>
         <nav>
-            <p style="font-size:20px">Navigation</p>
-            <div><a href="index.html">Home</a></div>
-            <div><a href="play-tic-tac-toe.html">Start Game</a></div>
-            <div><a href="scores-tic-tac-toe.html">Scores</a></div>
-            <div><a href="about-tic-tac-toe.html">About</a></div>
+            <p class="nav" style="font-size: 20px">Navigation</p>
+            <div class="list"><a href="index.html">Home</a></div>
+            <div class="list"><a href="play-tic-tac-toe.html">Start Game</a></div>
+            <div class="list"><a href="scores-tic-tac-toe.html">Scores</a></div>
+            <div class="list"><a href="about-tic-tac-toe.html">About</a></div>
         </nav>
     </header>
 
-    <main>
+    <main class="mid">
         <section>
-            <p style="font-size:20px">Welcome!</p>
+            <p class="sub-head" style="font-size: 20px">Welcome!</p>
         </section>
         <section>
             <p></p>
-            <label>Password</label>
-            <input type="password">
+            <label for="password">Password</label>
+            <input type="password" id="password">
             <button onclick="document.location='default.asp'">Login</button>
             <p></p>
         </section>
     </main>
 
-    <footer>
+    <footer class="foot">
         <div>Ty Tanner</div>
-        <div><a href="https://github.com/TimKaboti/CS_260">GitHub</div>
-
+        <div><a href="https://github.com/TimKaboti/CS_260">GitHub</a></div>
     </footer>
 </body>
+
+</html>

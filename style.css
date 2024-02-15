@@ -1,0 +1,95 @@
+html {
+    color: rgb(242, 242, 240);
+}
+
+
+
+
+.game-title {
+    color: mediumblue;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Ensure the header starts from the left edge */
+    width: 100%;
+    height: auto;
+    /* Allow the height to adjust based on content */
+    padding: 10px;
+    /* Add padding as needed */
+    box-sizing: border-box;
+    /* Include padding and border in the total width and height */
+}
+
+.main-background {
+    background-color: rgb(60, 58, 58);
+}
+
+
+
+/* Center the text and numbers in the ordered list */
+.centered-list {
+    text-align: center;
+}
+
+/* Style the list items as needed */
+.centered-list li {
+    /* Add any additional styling for list items */
+    text-align: center;
+}
+
+.centered-list ol {
+    list-style-position: inside;
+}
+
+
+.nav {
+    padding-top: 80px;
+    color: rgb(242, 242, 240);
+}
+
+.sub-head {
+    color: rgb(242, 242, 240);
+    padding-top: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styling unvisited links */
+a {
+    color: lightskyblue;
+    /* Replace with your desired color */
+    text-decoration: none;
+    /* Remove the default underline */
+}
+
+/* Styling visited links */
+a:visited {
+    color: rgb(200, 98, 247);
+    /* Replace with your desired color for visited links */
+}
+
+.mid {
+    text-align: center;
+}
+
+.play-button {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
