@@ -22,6 +22,8 @@ html {
     /* Add padding as needed */
     box-sizing: border-box;
     /* Include padding and border in the total width and height */
+    font-family: 'Atomic Age', sans-serif;
+    font-size: 50px;
 }
 
 .main-background {
@@ -72,6 +74,8 @@ a:visited {
 
 .play-button {
     margin-bottom: 0px;
+    font-family: 'Atomic Age', sans-serif;
+    background-color: rgb(129, 129, 220);
 }
 
 .board-container {
@@ -132,10 +136,6 @@ a:visited {
     opacity: calc(100%);
 
 }
-
-
-
-
 
 
 .foot {
