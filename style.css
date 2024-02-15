@@ -1,5 +1,7 @@
 html {
     color: rgb(242, 242, 240);
+    background-color: rgb(60, 58, 58);
+    ;
 }
 
 
@@ -9,7 +11,7 @@ html {
     color: mediumblue;
     background-color: black;
     text-align: center;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     /* Ensure the header starts from the left edge */
@@ -43,12 +45,6 @@ html {
     list-style-position: inside;
 }
 
-
-.nav {
-    padding-top: 80px;
-    color: rgb(242, 242, 240);
-}
-
 .sub-head {
     color: rgb(242, 242, 240);
     padding-top: 80px;
@@ -75,7 +71,66 @@ a:visited {
 }
 
 .play-button {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.board-container {
+    background-color: black;
+    /* Set your desired background color for the board */
+    padding: 20px;
+    /* Add padding for space around the board */
+    margin: 0 auto;
+    /* Center the board horizontally */
+    max-width: 400px;
+    /* Set a maximum width for the board */
+}
+
+
+.board-inner-container {
+    background: linear-gradient(to right, rgb(53, 53, 132), rgb(83, 71, 164), white, rgb(83, 71, 164), rgb(53, 53, 132));
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 350px;
+    background-size: 200% 100%;
+    /* Set a size larger than 100% to create the effect */
+    animation: gradientAnimation 10s infinite linear;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: -100% 0%;
+    }
+}
+
+
+.board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 0;
+}
+
+.tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    color: rgb(60, 58, 58);
+
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    background-color: rgb(60, 58, 58);
+    opacity: calc(100%);
+
 }
 
 
@@ -93,3 +148,65 @@ a:visited {
     text-align: center;
     padding: 10px;
 }
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: mediumblue;
+    padding: 10px 0;
+    /* Adjust top and bottom padding */
+    text-align: center;
+}
+
+
+.nav {
+    display: inline-block;
+    color: white;
+    /* Change display to inline-block */
+}
+
+nav {
+    display: flex;
+    /* Use flex to make list items appear in a horizontal line */
+    justify-content: center;
+}
+
+
+.list {
+    margin: 0 10px;
+    display: flex;
+    /* Use flex to make list items appear in a horizontal line */
+    justify-content: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: mediumblue;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally and add margin at the top */
+    margin-top: 20px;
+}
+
+label {
+    text-align: center;
+}
+
+/* Add more styles as needed for responsiveness */
